@@ -204,6 +204,16 @@
 		margin-top: 30px;
 	}
 
+	.terms-icon{
+		margin-top: 30px;
+	}
+
+	.terms-text{
+		font-size: 21px;
+    line-height: 37px;
+		margin-bottom: 45px;
+	}
+
 	
 }
 
@@ -235,6 +245,20 @@
 
 	.small-banner-icon{
 		background-size: 39px !important;
+	}
+
+	.terms-icon{
+		margin-top: 20px;
+	}
+
+	.terms-icon{
+		background-size: 39px !important;
+	}
+
+	.terms-text{
+		font-size: 19px;
+    line-height: 32px;
+		margin-bottom: 40px;
 	}
 	
 }
