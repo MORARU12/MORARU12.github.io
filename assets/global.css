@@ -50,6 +50,14 @@ video{
 	transition: 1.2s ease-in-out;
 }
 
+.video1{
+	width: 100%;
+    height: 111%;
+    object-fit: cover;
+    bottom: 50px;
+    position: absolute;
+}
+
 
 
 
@@ -120,26 +128,30 @@ header{
 	z-index: 10;
 }
 
-/* .header-plh{
-	width: 100%;
-	height: 70px;
-} */
+.header-plh{
+	/* width: 100%;
+	height: 65px; */
+}
 
 .header-content-fixed{
 	width: 100%;
-	height: 70px;
+	height: 65px;
 	position: relative;
 	left: 0;
 	top: 0;
 	z-index: 10;
 	/* background-color: rgb(19 19 27 / 97%);
 	backdrop-filter: blur(6px); */
+
+	/* position: fixed; */
+	/* background-color: #13131b; */
+	z-index: 999;
 }
 
 .header-content {
 	max-width: 840px;
 	min-width: 840px;
-	height: 70px;
+	height: 65px;
 	display: flex;
 	justify-content: space-between;
 	margin: auto;
@@ -153,16 +165,39 @@ header{
 .logo{
 	height: 48px;
 	width: 48px;
-	background: url(./icons/logo.svg) 50%/cover no-repeat;
-	background-size: 52px;
+	background: url(./icons/logo2.svg) 50%/cover no-repeat;
+	background-size: 42px;
 	margin: auto 0;
+}
+
+.header-icons{
+	height: 44px;
+    width: 44px;
+    background: url(./icons/applee.svg) 50%/cover no-repeat;
+    background-position: center;
+    background-position-y: 10px;
+    background-size: 18px;
+    background-color: black;
+    border-radius: 16px;
+    margin: auto 0;
+
+		filter: drop-shadow(0px 1px 12px #ffffff09);
+	}
+
+.header-android-icon{
+	background: url(./icons/android.svg) 50%/cover no-repeat;
+	background-position: center;
+	background-position-y: 15px;
+	background-size: 22px;
+	background-color: black;
+	margin-left: 26px;
 }
 
 .logo-text{
 	font-family: "Quicksand",sans-serif;
     letter-spacing: 3px;
     font-size: 19px;
-    line-height: 69px;
+    line-height: 64px;
     font-weight: 900;
     margin-left: 10px;
     color: #fff;
@@ -181,6 +216,8 @@ header{
     margin-right: 0;
 		background: url(./icons/get-emoji.png) 50%/cover no-repeat;
 		background-size: 35px;
+
+		margin-right: 26px;
 }
 
 .get-app-btn{
@@ -264,10 +301,10 @@ header{
 }
 
 .intro-text{
-	font-weight: 800;
+	font-weight: 700;
     line-height: 45px;
     font-size: 28px;
-		    letter-spacing: 1px;
+		    letter-spacing: 2px;
     width: fit-content;
     margin: auto;
 
@@ -317,28 +354,23 @@ header{
 
 .pay-btn{
 	position: absolute;
-    height: fit-content;
-    border-radius: 38px;
-    right: -21%;
-    top: 4%;
-    z-index: 999;
-    display: flex;
-    transform: scale(0.85);
-    
-    padding: 12px 21px;
+	height: fit-content;
+	border-radius: 38px;
+	z-index: 998;
+	display: flex;
+	transform: scale(0.85);
+	padding: 11px 17px;
+	background: white;
+	filter: drop-shadow(0px 1px 10px #ffffff95);
+	font-size: 15px;
+	font-weight: 800;
+	color: black;
+	line-height: 24px;
+	letter-spacing: 2px;
+	margin: 0;
 
-		background: white;
-		filter: drop-shadow(0px 1px 10px #ffffff95);
-
-
-
-
-		font-size: 18px;
-    font-weight: 800;
-    color: black;
-    line-height: 24px;
-    letter-spacing: 2px;
-    margin: 0;
+	right: -19%;
+	top: 15%;
 }
 
 
@@ -347,8 +379,8 @@ header{
 
 .pay-btn-1{
 	right: inherit;
-	left: -29%;
-    top: 15%;
+	left: -20%;
+	top: 28%;
 }
 
 .pay-btn-3{
@@ -364,18 +396,17 @@ header{
 
 .bottom-arrow{
 	position: absolute;
-    height: 28px;
-    width: 46px;
-    bottom: -19px;
-    right: 0;
-    left: 0;
-    margin: auto;
-    background: url(data:image/png;base64,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) center center/cover no-repeat;
-    background-size: 45px;
-    background-position-y: 0;
-    transform: rotate(
-			180deg
-		);
+	height: 28px;
+	width: 46px;
+	bottom: -13px;
+	right: 0;
+	left: 0;
+	margin: auto;
+	background: url(./icons/pay-bottom-arrow.svg) 50%/cover no-repeat;
+	background-position: center;
+	background-size: 72px;
+	background-position-y: 4px;
+	background-repeat: no-repeat;
 }
 
 .small-banners-row{
@@ -401,34 +432,41 @@ header{
     margin: auto;
     margin-top: 35px;
 		background: url(./icons/add-play.svg) 50%/cover no-repeat;
-    background-size: 41px;
+		background-size: 39px;
 
-		filter: drop-shadow(0px 1px 16px rgba(255,67,131,.99));
+    filter: drop-shadow(0px 1px 17px rgba(255,67,131,.99));
+
+
+		height: 60px;
+    width: 60px;
+    margin: auto;
+    margin-bottom: 15px;
+		margin-top: 55px;
 }
 
 .small-banner-icon-2{
 	background: url(./icons/add-story.svg) 50%/cover no-repeat;
-	background-size: 41px;
-
-	filter: drop-shadow(0px 1px 16px rgba(255,231,144,.99));
+	background-size: 39px;
+	filter: drop-shadow(0px 1px 14px rgba(255,231,144,.99));
 }
 
 .small-banner-icon-3{
 	background: url(./icons/paypal3.svg) 50%/cover no-repeat;
-	background-size: 38px;
-
-	filter: drop-shadow(0px 1px 24px rgba(123,156,256,.70));
+	background-size: 33px;
+	/* background-position-x: 19px; */
+	filter: drop-shadow(0px 1px 27px rgba(123,156,256));
 }
 
 .small-banner-text{
 	font-family: "Quicksand",sans-serif;
-    font-weight: 600;
-    line-height: 29px;
-    font-size: 15px;
-    text-align: center;
-    padding: 0 36px;
-    box-sizing: border-box;
-    margin: 10px 0 75px;
+	font-weight: 700;
+	line-height: 33px;
+	font-size: 16px;
+	text-align: center;
+	padding: 0 40px;
+	box-sizing: border-box;
+	margin: 10px 0 50px;
+	letter-spacing: 1px;
 }
 
 .small-banner-text span{
@@ -570,6 +608,99 @@ header{
 
 
 
+/* Join now row */
+
+.join-now-row{
+	width: 100%;
+	height: 260px;
+	border-radius: 24px;
+	position: relative;
+	background: #000;
+	margin: 28px 0 0 0;
+}
+
+.iphone-mockup{
+	height: 260px;
+	width: 260px;
+	margin: auto;
+	background: url(./icons/ss-2.jpg) 50%/cover no-repeat;
+	background-size: 193px;
+	background-position: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-position-y: 17px;
+}
+
+.iphone-mockup-2{
+	background: url(./icons/ss-1.jpg) 50%/cover no-repeat;
+	right: 0;
+	left: inherit;
+	background-size: 193px;
+	position: absolute;
+	background-position-y: -109px;
+}
+
+.centered-action{
+	position: absolute;
+	height: fit-content;
+	margin: auto;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	width: 400px;
+}
+
+.join-now-text{
+	margin: 0;
+	margin-bottom: 26px;
+	font-family: "Quicksand",sans-serif;
+	font-weight: 900;
+	line-height: 29px;
+	font-size: 24px;
+	text-align: center;
+	padding: 0 36px;
+	box-sizing: border-box;
+	letter-spacing: 3px;
+}
+
+.download-app-row{
+	display: flex;
+	width: 100%;
+	justify-content: center;
+}
+
+.join-now-btns{
+	height: 44px;
+    width: 44px;
+    background: url(./icons/applee-black.svg) 50%/cover no-repeat;
+    background-position: center;
+    background-position-y: 10px;
+    background-size: 18px;
+    border-radius: 16px;
+    margin: auto 0;
+
+    filter: drop-shadow(0px 1px 22px #ffffff70);
+    background-color: white;
+}
+
+.join-now-btns-android{
+
+		background: url(./icons/android-black.svg) 50%/cover no-repeat;
+		background-position: center;
+		background-position-y: 15px;
+		background-size: 22px;
+    background-color: white;
+		/* margin-right: 16px; */
+} 
+
+.join-now-btns-placeholder{
+	height: 44px;
+	width: 44px;
+}
+
+
 
 
 
@@ -581,7 +712,57 @@ header{
     justify-content: center;
     position: relative;
     padding: 35px 0;
+    align-items: center;
 }
+
+.footer-icon{
+	height: 44px;
+	width: 44px;
+	margin: auto 0;
+	filter: drop-shadow(0px 1px 12px #ffffff09);
+}
+
+.instagram-icon{
+	background: url(./icons/instagram.svg) 50%/cover no-repeat;
+	background-position: center;
+	background-size: 24px;
+	background-color: black;
+	border-radius: 16px;
+}
+
+.tiktok-icon{
+	background: url(./icons/tiktok.svg) 50%/cover no-repeat;
+	background-position: center;
+	background-size: 22px;
+	background-color: black;
+	border-radius: 16px;
+
+	margin-left: 26px;
+}
+
+.footer-text{
+	font-weight: 600;
+	line-height: 30px;
+	font-size: 14px;
+	color: white;
+	letter-spacing: 2px;
+	margin: 0;
+	margin-top: 0;
+	height: fit-content;
+	margin-left: 26px;
+}
+
+.copyright{
+	color: #999f9f;
+}
+
+
+
+
+
+
+
+
 
 .footer-2-450{
 	display: none;
