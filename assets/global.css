@@ -189,6 +189,7 @@ header{
 	height: fit-content;
 	margin: auto;
 	margin-right: 0;
+	display: flex;
 }
 
 .logo{
