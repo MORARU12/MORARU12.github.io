@@ -23,6 +23,10 @@ body::-webkit-scrollbar {
 	display: none;
 }
 
+.body{
+	overflow: hidden;
+}
+
 a {
 	text-decoration: none;
 	color: white;
@@ -46,6 +50,9 @@ video{
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
+	position: absolute;
+	top: -1%;
+	z-index: 10;
 
 	transition: 1.2s ease-in-out;
 }
@@ -54,6 +61,7 @@ video{
 	width: 100%;
     height: 111%;
     object-fit: cover;
+		top: initial;
     bottom: 50px;
     position: absolute;
 }
@@ -145,7 +153,7 @@ header{
 
 	/* position: fixed; */
 	/* background-color: #13131b; */
-	z-index: 999;
+	z-index: 998;
 }
 
 .header-content {
@@ -297,7 +305,7 @@ header{
     position: relative;
     margin-top: 80px;
     margin-bottom: 45px;
-    width: 62%;
+    width: 64%;
 }
 
 .intro-text{
@@ -311,13 +319,14 @@ header{
 }
 
 .intro-text-2{
-	font-weight: 600;
-    line-height: 30px;
-    margin-top: 15px;
-    margin-bottom: 0;
-    font-size: 17px;
-    color: #999f9f;
-    letter-spacing: 1px;
+	font-weight: 700;
+	line-height: 30px;
+	margin-top: 15px;
+	margin-bottom: 0;
+	font-size: 18px;
+	color: #999f9f;
+	letter-spacing: 2px;
+	font-family: "Quicksand",sans-serif;
 }
 
 .video-row-plh{
@@ -505,6 +514,7 @@ header{
 
 	border-radius: 24px 24px 0 0;
 	overflow: hidden;
+	z-index: 20;
 
 }
 
@@ -546,7 +556,7 @@ header{
 
 
 
-
+/* 
 .pay-btn-animation-1{
 	animation-name: wave-animation;
 	animation-duration: 2.4s;
@@ -600,7 +610,7 @@ header{
   100% {
     transform: scale(0.85);
   }
-}
+} */
 
 
 
@@ -649,7 +659,8 @@ header{
 	top: 0;
 	bottom: 0;
 	right: 0;
-	width: 400px;
+	width: 206px;
+	z-index: 9;
 }
 
 .join-now-text{
@@ -838,3 +849,37 @@ header{
 	margin-bottom: 50px;
 	color: white;
 }
+
+
+
+.preloader
+{
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100vh;
+background-color: #13131A;
+z-index: 998;
+text-align: center;
+display: initial;
+transition: 0.1s ease-in-out;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.preloader .logo{
+	animation: scalee 1s ease-in-out;
+	animation-iteration-count:infinite;
+  animation-direction: alternate;
+
+}
+
+@keyframes scalee
+{
+0% { transform: scale(1.2);}
+50%{ transform: scale(1);}
+100% { transform: scale(1.2);}
+}
+
