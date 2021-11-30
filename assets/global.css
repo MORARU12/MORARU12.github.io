@@ -75,14 +75,14 @@ video{
 .intrro-ft{
 	width: 100%;
 	letter-spacing: 0.3px;
-	font-size: 16px;
+	font-size: 18px;
 	line-height: 25px;
 	font-weight: 700;
-	margin-top: 45px;
-	margin-bottom: 25px;
+	margin-top: 55px;
+	margin-bottom: 15px;
 	text-align: center;
-
 	color: white;
+	font-family: "Quicksand",sans-serif;
 }
 
 .intrro-ft:first-of-type{
@@ -97,8 +97,17 @@ video{
 	line-height: 23px;
 	margin: 0;
 		margin-top: 10px;
+		text-align: center;
 
 	color: #999f9f !important;
+}
+
+.our-email{
+	letter-spacing: 3px;
+	margin-left: 0;
+	filter: drop-shadow(0px 1px 11px #ffffff95);
+	display: block;
+	font-size: 14px !important; 
 }
 
 .simple-list-ft{
@@ -112,6 +121,7 @@ video{
 	padding-left: 17px;
 	box-sizing: border-box;
 	margin-top: 10px;
+	text-align: center;
 
 	color: #999f9f !important;
 }
@@ -166,8 +176,19 @@ header{
 	position: relative;
 }
 
+.header-content-mini{
+	max-width: 640px;
+	min-width: 640px;
+}
+
 .logo-plh{
 	display: flex;
+}
+
+.logo-plh-btns{
+	height: fit-content;
+	margin: auto;
+	margin-right: 0;
 }
 
 .logo{
@@ -281,6 +302,15 @@ header{
 	background-color: #1c1c24;
 }
 
+.main-content-plh-mini{
+	max-width: 640px;
+	min-width: 640px;
+}
+
+.main-content-mini{
+	padding: 28px 58px;
+}
+
 .big-banner{
 	position: relative;
     width: 100%;
@@ -305,7 +335,7 @@ header{
     position: relative;
     margin-top: 80px;
     margin-bottom: 45px;
-    width: 64%;
+    width: 67%;
 }
 
 .intro-text{
@@ -323,7 +353,7 @@ header{
 	line-height: 30px;
 	margin-top: 15px;
 	margin-bottom: 0;
-	font-size: 18px;
+	font-size: 19px;
 	color: #999f9f;
 	letter-spacing: 2px;
 	font-family: "Quicksand",sans-serif;
@@ -423,6 +453,10 @@ header{
 	justify-content: space-between;
 	margin: 28px 0 0 0;
 	width: 100%;
+}
+
+.small-banners-row-2{
+	display: none;
 }
 
 
@@ -719,7 +753,8 @@ header{
 
 .footer{
 	height: fit-content;
-    display: flex;
+	display: flex;
+	flex-wrap: wrap;
     justify-content: center;
     position: relative;
     padding: 35px 0;
@@ -753,7 +788,7 @@ header{
 
 .footer-text{
 	font-weight: 600;
-	line-height: 30px;
+	line-height: 44px;
 	font-size: 14px;
 	color: white;
 	letter-spacing: 2px;
@@ -761,6 +796,7 @@ header{
 	margin-top: 0;
 	height: fit-content;
 	margin-left: 26px;
+	padding: 10px 0px;
 }
 
 .copyright{
@@ -821,18 +857,21 @@ header{
 }
 
 .terms-icon{
-	height: 100px;
-	width: 100px;
-	margin: auto;
-	margin-top: 35px;
+	filter: drop-shadow(0px 1px 12px #ffffff09);
+	height: 44px;
+	width: 44px;
+	border-radius: 16px;
+	margin: 55px auto 26px auto;
+
 	background: url(./icons/terms.svg) 50%/cover no-repeat;
-	background-size: 41px;
-	/* filter: drop-shadow(0px 1px 16px rgba(255,255,131,.99)); */
+	background-size: 26px;	
+
+	background-color: black !important;
 }
 
 .support-icon{
 	background: url(./icons/help.svg) 50%/cover no-repeat;
-	background-size: 41px;
+	background-size: 26px;	
 }
 
 .terms-text{
