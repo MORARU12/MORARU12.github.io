@@ -52,6 +52,14 @@
 	.intro-text-plh{
 		width: 75%;
 	}
+
+	.iphone-mockup{
+		opacity: 0;
+	}
+
+	.join-now-row{
+		height: 240px;
+	}
 }
 
 /* 768 */
@@ -142,7 +150,7 @@
 
 	.pay-btn{
 		top: 14%;
-		left: -28%;
+    left: -20%;
 		right: initial;
 	}
 
@@ -186,9 +194,12 @@
 		width: 100%;
 		display: block;
 		position: relative;
-		margin-top: 16px;
+		margin-top: 26px;
+		background: url(./icons/ss-8.jpg) 50%/cover no-repeat;
 		background-position-y: 0;
-		background-size: 211px;
+    background-size: 240px !important;
+		opacity: 1;
+    height: 427px;
 	}
 
 	.iphone-mockup-2{
@@ -284,7 +295,7 @@
 	}
 
 	.intro-text-2{
-    line-height: 30px;
+    line-height: 32px;
     font-size: 18px;
 	}
 	
@@ -324,6 +335,10 @@
 /* 414 */
 @media screen and (max-width:414px) {
 
+	.free{
+		display: block;
+	}
+
 	.intro-text-plh{
     margin-bottom: 35px;
 	}
@@ -339,7 +354,7 @@
 	}
 	
 	.small-banner-icon-2{
-		background-size: 37px;
+		background-size: 43px;
 	}
 	
 	.small-banner-text{
