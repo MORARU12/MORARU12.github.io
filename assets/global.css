@@ -51,7 +51,7 @@ video{
 	height: 100%;
 	object-fit: cover;
 	position: absolute;
-	top: -1%;
+	top: 0;
 	z-index: 10;
 
 	transition: 1.2s ease-in-out;
@@ -64,6 +64,20 @@ video{
 		top: initial;
     bottom: 50px;
     position: absolute;
+}
+
+.iphone-video{
+	width: 88%;
+	height: 88%;
+	object-fit: cover;
+	position: absolute;
+	top: 0;
+	z-index: 10;
+	margin: auto;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
 }
 
 
@@ -158,6 +172,7 @@ header{
 	left: 0;
 	top: 0;
 	z-index: 10;
+	margin-top: 15px;
 	/* background-color: rgb(19 19 27 / 97%);
 	backdrop-filter: blur(6px); */
 
@@ -223,6 +238,24 @@ header{
 	margin-left: 26px;
 }
 
+.sell-with-us-plh{
+    line-height: 45px;
+    color: white;
+    font-weight: 700;
+    font-family: "Quicksand",sans-serif;
+    font-size: 17px;
+    letter-spacing: 1px;
+    color: #999f9f;
+}
+
+.money-icon{
+	width: 48px;
+	height: 48px;
+	margin-left: 5px;
+	background: url(https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/285/money-with-wings_1f4b8.png) 50%/cover no-repeat;
+  background-size: 29px;
+}
+
 .logo-text{
 	font-family: "Quicksand",sans-serif;
     letter-spacing: 3px;
@@ -280,7 +313,7 @@ header{
 	margin: auto;
 	width: 155px;
 	height: 32px;
-	background: url(./icons/google.png) 50%/cover no-repeat;
+	background: url(./icons/android.svg) 50%/cover no-repeat;
 	background-size: 124px;
 		transform: scale(0.9);
 	top: 0;
@@ -314,147 +347,232 @@ header{
 
 .big-banner{
 	position: relative;
-    width: 100%;
-		margin: 2px 0 0 0;
-    box-sizing: border-box;
-    border-radius: 30px 30px 24px 24px;
-    display: flex;
-    height: fit-content;
-    flex-direction: column;
-		overflow: hidden;
-
-		background-color: #000;
+	width: 100%;
+	margin: 2px 0 0 0;
+	box-sizing: border-box;
+	border-radius: 30px 30px 24px 24px;
+	display: flex;
+	height: 500px;
+	flex-direction: column;
+	overflow: hidden;
+	background-color: #000;
 
 }
 
+.moving-icon{
+	z-index: 0;
+	position: absolute;
+	left: 12%;
+	right: 0;
+	top: 6%;
+	bottom: 0;
+	height: 80px;
+	width: 80px;
+}
+
 .intro-text-plh{
-	text-align: center;
-    margin: 0 auto;
-    bottom: 0;
-    top: 0;
-    height: fit-content;
-    position: relative;
-    margin-top: 80px;
-    margin-bottom: 45px;
-    width: 67%;
+	text-align: left;
+	bottom: 0;
+	top: 0;
+	height: fit-content;
+	position: relative;
+	width: 58%;
+	margin: 60px 0px 60px 70px;
 }
 
 .intro-text{
 	font-weight: 700;
-    line-height: 45px;
-    font-size: 28px;
-		    letter-spacing: 2px;
-    width: fit-content;
-    margin: auto;
+	line-height: 45px;
+	font-size: 27px;
+	letter-spacing: 2px;
+	width: 100%;
+	margin: auto;
+	font-family: "Quicksand",sans-serif;
 
 }
 
 .intro-text-2{
 	font-weight: 700;
-	line-height: 30px;
-	margin-top: 15px;
+	line-height: 35px;
+	margin-top: 11px;
 	margin-bottom: 0;
-	font-size: 19px;
+	font-size: 17px;
 	color: #999f9f;
 	letter-spacing: 2px;
 	font-family: "Quicksand",sans-serif;
 }
 
-.video-row-plh{
+.join-btn-plh{
+	justify-content: left;
+	margin-top: 25px;
+	margin-top: 30px;
 	display: flex;
-    flex-direction: row;
-    align-content: space-between;
-    width: 95%;
-    margin: auto;
+	width: 100%;
 }
 
-.video-plh{
-	width: 201px;
-    height: 312px;
-    left: 0;
-    border-radius: 38px 38px 0 0;
-    box-sizing: border-box;
-		border: 13px solid #1c1c25;
-    border-bottom: 0;
-    margin: auto;
-		background-color: #13131b;
-
-		position: relative;
-}
-
-.video-plh-1{
-	position: relative;
-	bottom: -50px;
-}
-
-.video-plh-3{
-	position: relative;
-	bottom: -50px;
-}
-
-.pay-btn{
-	position: absolute;
-	height: fit-content;
-	border-radius: 38px;
-	z-index: 998;
+.get-btn{
+	background-color: #1c1c24;
 	display: flex;
-	transform: scale(0.85);
-	padding: 11px 17px;
-	background: white;
-	filter: drop-shadow(0px 1px 10px #ffffff95);
+	border-radius: 16px;
+	overflow: hidden;
+	line-height: 49px;
+	color: white;
+	font-weight: 700;
+	font-family: "Quicksand",sans-serif;
 	font-size: 15px;
-	font-weight: 800;
-	color: black;
-	line-height: 24px;
-	letter-spacing: 2px;
-	margin: 0;
-
-	right: -19%;
-	top: 15%;
+	padding-left: 15px;
+	letter-spacing: 1px;
+	padding-right: 5px;
 }
 
+.apple-icon{
+	height: 50px;
+	width: 44px;
+	filter: drop-shadow(0px 1px 8px rgba(255,255,255, 0.5));
+	margin-left: 5px;
 
-
-
-
-.pay-btn-1{
-	right: inherit;
-	left: -20%;
-	top: 28%;
-}
-
-.pay-btn-3{
-	right: -20%;
-	top: 37%;
-}
-
-.pay-btn span{
-	color: #9e9e9e;
-    font-weight: 700;
-		margin-left: 6px;
-		font-family: "Quicksand",sans-serif;
-
-}
-
-.currency{
-	position: absolute;
-	right: 17.3px;
-}
-
-.bottom-arrow{
-	position: absolute;
-	height: 28px;
-	width: 46px;
-	bottom: -13px;
-	right: 0;
-	left: 0;
-	margin: auto;
-	background: url(./icons/pay-bottom-arrow.svg) 50%/cover no-repeat;
+	background: url(./icons/applee.svg) 50%/cover no-repeat;
 	background-position: center;
-	background-size: 72px;
-	background-position-y: 4px;
-	background-repeat: no-repeat;
+	background-position-y: 13px;
+	background-size: 18px;
 }
+
+.google-icon{
+	background: url(./icons/android.svg) 50%/cover no-repeat;
+	background-position: center;
+	background-position-y: 17px;
+	background-size: 22px;
+}
+
+.app-preview{
+    left: inherit;
+    position: absolute;
+    height: 500px;
+    width: 280px;
+    margin: auto;
+    top: 0px;
+    bottom: 0;
+    right: 20px;
+}
+
+.joined-plh{
+	position: absolute;
+	height: 34px;
+	width: 300px;
+	bottom: 60px;
+	left: 70px;
+	margin: auto;
+	display: flex;
+}
+
+.joined-circles{
+	display: flex;
+}
+
+.joined{
+	position: relative;
+	height: 34px;
+	width: 34px;
+	border-radius: 100px;
+	border: 3px solid white;
+	box-sizing: border-box;
+	background: url(./icons/p1.jpg) 50%/cover no-repeat;
+}
+
+.joined-2{
+	right: 15px;
+	background: url(./icons/p7.jpg) 50%/cover no-repeat;
+}
+
+.joined-3{
+	right: 30px;
+	background: url(./icons/p4.jpg) 50%/cover no-repeat;
+
+}
+
+.joined-4{
+	right: 45px;
+	background: url(./icons/p6.jpg) 50%/cover no-repeat;
+
+}
+
+.joined-5{
+	right: 60px;
+	background: url(./icons/p5.jpg) 50%/cover no-repeat;
+
+}
+
+.joinde-text{
+	letter-spacing: 2px;
+	font-family: "Quicksand",sans-serif;
+	font-size: 17px;
+	font-weight: 700;
+	position: absolute;
+	right: 63px;
+	margin: 0;
+	color: white;
+	line-height: 34px;
+}
+
+.joinde-text span{
+	color: #999f9f;
+}
+
+
+
+
+
+
+
+.motion-plh{
+	height: 80px;
+	width: 80px;
+	margin: auto;
+	margin-bottom: 25px;
+	margin-top: 60px;
+	position: relative;
+}
+
+.motion-icon-plh{
+	z-index: 0;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	height: 80px;
+	width: 80px;
+	/* filter: drop-shadow(0px 1px 27px rgba(255,255,255, 0.4)); */
+}
+
+.small-banner-icon{
+	height: 80px;
+	width: 80px;
+	position: absolute;
+	background: url(./icons/play.svg) 50%/cover no-repeat;
+	background-size: 30px;
+	z-index: 10;
+	top: 0;
+}
+
+.small-banner-icon-2{
+	background: url(./icons/party.png) 50%/cover no-repeat;
+	background-size: 30px;
+	/* filter: drop-shadow(0px 1px 14px rgba(255,231,144,.49)); */
+}
+
+.small-banner-icon-3{
+	background: url(./icons/paypal3.svg) 50%/cover no-repeat;
+	background-size: 26px;
+	/* background-position-x: 19px; */
+	/* filter: drop-shadow(0px 1px 27px rgba(123,156,256)); */
+}
+
+
+
+
+
+
 
 .small-banners-row{
 	display: flex;
@@ -477,7 +595,7 @@ header{
     background: #000;
 }
 
-.small-banner-icon{
+/* .small-banner-icon{
 	height: 100px;
     width: 100px;
     margin: auto;
@@ -493,9 +611,9 @@ header{
     margin: auto;
     margin-bottom: 15px;
 		margin-top: 55px;
-}
+} */
 
-.small-banner-icon-2{
+/* .small-banner-icon-2{
 	background: url(./icons/wow.png) 50%/cover no-repeat;
 	background-size: 45px;
 	filter: drop-shadow(0px 1px 14px rgba(255,231,144,.49));
@@ -505,8 +623,8 @@ header{
 	background: url(./icons/paypal3.svg) 50%/cover no-repeat;
 	background-size: 33px;
 	/* background-position-x: 19px; */
-	filter: drop-shadow(0px 1px 27px rgba(123,156,256));
-}
+	/* filter: drop-shadow(0px 1px 27px rgba(123,156,256)); */
+/* }  */
 
 .small-banner-text{
 	font-family: "Quicksand",sans-serif;
@@ -541,13 +659,6 @@ header{
   color: white;
 }
 
-.free{
-	font-family: "Quicksand",sans-serif;
-	font-weight: 700;
-	text-shadow: inherit;
-  color: white;
-}
-
 .span-fees{
 	font-family: "Quicksand",sans-serif;
 	text-shadow: inherit !important;
@@ -565,6 +676,274 @@ header{
 	text-shadow: 0 1px 9px #61d8ff;
 	color: #9cdbf1;
 }
+
+
+
+/* How to join banner */
+.how-to-join-banner{
+	width: 100%;
+	border-radius: 24px;
+	position: relative;
+	background: #000;
+	margin: 28px 0 0 0;
+	overflow: hidden;
+	/* padding: 65px 0 60px 0px; */
+	padding-bottom: 25px;
+	padding-top: 60px;
+}
+
+.easy-intro{
+	margin: 0;
+	margin-bottom: 26px;
+	font-family: "Quicksand",sans-serif;
+	font-weight: 900;
+	line-height: 29px;
+	font-size: 24px;
+	text-align: center;
+	padding: 0 36px;
+	box-sizing: border-box;
+	letter-spacing: 3px;
+	position: relative;
+	left: 1.5px;
+
+	z-index: 9;
+}
+
+.join-process{
+	display: flex;
+	width: 90%;
+	justify-content: space-between;
+	position: relative;
+	margin: 40px auto 40px auto;
+	z-index: 9;
+}
+
+.join-steps{
+	height: fit-content;
+	width: 24%;
+	box-sizing: border-box;
+}
+
+.intro-steps{
+	flex-direction: row;
+	height: 70px;
+	width: 100%;
+	border: 7px solid #13131b;
+	background: #1c1c25;
+	border-radius: 25px;
+	box-sizing: border-box;
+	position: relative;
+	display: flex;
+	justify-content: center;
+
+	/* box-shadow: 0px 3px 23px #ffffff14; */
+}
+
+.step-apple-i{
+	width: 44px;
+	filter: drop-shadow(0px 1px 8px rgba(255,255,255, 0.5));
+	background: url(./icons/applee.svg) 50%/cover no-repeat;
+	background-position: center;
+	display: block;
+	height: 100%;
+	background-position-y: 15px;
+	background-size: 20px;
+	margin-right: 5px;
+}
+
+.step-android-i{
+	width: 44px;
+	filter: drop-shadow(0px 1px 8px rgba(255,255,255, 0.5));
+	background: url(./icons/android.svg) 50%/cover no-repeat;
+	background-position: center;
+	margin: inherit;
+	display: block;
+	height: 100%;
+	background-position-y: 20px;
+	background-size: 27px;
+	
+}
+
+.step-description{
+	box-sizing: border-box;
+	letter-spacing: 1px;
+	font-family: "Quicksand",sans-serif;
+	font-weight: 700;
+	text-align: center;
+	padding: 0 30px;
+	line-height: 22px;
+	font-size: 15px;
+	margin-top: 15px;
+	color: #999f9f;
+}
+
+.line-for-next-step{
+	position: relative;
+	height: 6px;
+	background: white;
+	width: auto;
+	background-blend-mode: screen, color-dodge, overlay, difference, normal;
+	border-radius: 100px;
+	flex: 1;
+	box-sizing: border-box;
+	margin: 0 16px;
+	margin-top: 34px;
+}
+
+.step-account-i{
+	width: 44px;
+	display: block;
+	background: url(./icons/account.svg) 50%/cover no-repeat;
+	height: 100%;
+	background-position-y: center;
+	background-size: 26px;
+	filter: drop-shadow(0px 1px 8px rgba(255,255,255, 0.5));
+}
+
+.step-camera-i{
+	background: url(./icons/camera.svg) 50%/cover no-repeat;
+	height: 100%;
+	background-position-y: 15px;
+	background-size: 37px;
+	width: 44px;
+	filter: drop-shadow(0px 1px 8px rgba(255,255,255, 0.5));
+}
+
+.motin-steps{
+	margin: auto;
+	z-index: 0;
+	position: absolute;
+	right: 0;
+	height: 820px;
+	width: 820px;
+	left: 0;
+	top: 183%;
+	bottom: 0;
+}
+
+
+
+/* eco banner */
+
+.eco-banner{
+	position: relative;
+	width: 100%;
+	box-sizing: border-box;
+	border-radius: 30px 30px 24px 24px;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	background-color: rgb(0, 0, 0);
+
+	margin-top: 28px;
+	height: fit-content;
+}
+
+.eco-text-plh{
+	text-align: left;
+	bottom: 0px;
+	top: 0px;
+	height: fit-content;
+	position: relative;
+	width: 45%;
+	margin: 35px 0px 44px 46px;
+}
+
+.eco-1{
+	width: 100%;
+	margin: auto;
+	font-family: Quicksand, sans-serif;
+	font-weight: 700;
+    line-height: 33px;
+    font-size: 22px;
+    letter-spacing: 2px;
+}
+
+.eco-2{
+	font-weight: 700;
+	line-height: 30px;
+	margin-top: 10px;
+	margin-bottom: 0px;
+	font-size: 15px;
+	color: rgb(153, 159, 159);
+	letter-spacing: 2px;
+	font-family: Quicksand, sans-serif;
+}
+
+.eco-animation{
+	background: url(./icons/eco.gif) 50%/cover no-repeat;
+	background-repeat: no-repeat;
+	background-attachment: initial;
+	background-origin: initial;
+	background-clip: initial;
+	background-color: initial;
+	left: inherit;
+	position: absolute;
+	background-position: center center;
+	height: 218px;
+	width: 229px;
+	margin: auto;
+	top: 136px;
+	bottom: 0px;
+	right: -56px;
+	background-size: 267px !important;
+}
+
+.eco-emoji{
+	position: absolute;
+	font-size: 31px;
+	right: 70px;
+	top: 0;
+	bottom: 0;
+	height: fit-content;
+	margin: auto;
+	z-index: 9;
+}
+
+.planet-emoji{
+	margin-right: 14px;
+	filter: drop-shadow(0px 1px 11px rgba(0, 187, 255, 0.4));
+}
+
+.seed-emoji{
+	filter: drop-shadow(0px 1px 11px rgba(86,199,0, 0.4));
+	margin-right: 11px;
+}
+
+.droplet-emoji{
+	margin-right: 11px;
+	filter: drop-shadow(0px 1px 11px rgba(0, 187, 255, 0.4));
+}
+
+.tree-emoji{
+	margin-right: 0;
+	filter: drop-shadow(0px 1px 11px rgba(86,199,0, 0.4));
+	color: rgb(86 199 0);
+}
+
+.eco-motion{
+	margin: auto;
+	z-index: 0;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+
+	height: 420px;
+	width: 420px;
+	right: -84%;
+	top: -203%;
+	z-index: 0;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -788,7 +1167,7 @@ header{
 	flex-wrap: wrap;
     justify-content: center;
     position: relative;
-    padding: 35px 0;
+		padding:35px 0 15px 0;
     align-items: center;
 }
 
@@ -811,6 +1190,16 @@ header{
 	background: url(./icons/tiktok.svg) 50%/cover no-repeat;
 	background-position: center;
 	background-size: 22px;
+	background-color: black;
+	border-radius: 16px;
+
+	margin-left: 26px;
+}
+
+.email-icon{
+	background: url(./icons/email.svg) 50%/cover no-repeat;
+	background-position: center;
+	background-size: 24px;
 	background-color: black;
 	border-radius: 16px;
 
@@ -919,6 +1308,26 @@ header{
 	margin-bottom: 50px;
 	color: white;
 }
+
+
+/* Footer featured */
+
+.footer-featured{
+	height: fit-content;
+	display: flex;
+	flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  padding: 0px 0 35px 0;
+  align-items: center;
+}
+
+.footer-featured a {
+	height: 44px;
+	width: 204px;
+	margin-left: 0;
+}
+
 
 
 
