@@ -54,7 +54,7 @@ video{
 	top: 0;
 	z-index: 10;
 
-	transition: 1.2s ease-in-out;
+	/* transition: 1.2s ease-in-out; */
 }
 
 .video1{
@@ -78,6 +78,10 @@ video{
 	right: 0;
 	top: 0;
 	bottom: 0;
+}
+
+.v-2{
+	display: none;
 }
 
 
@@ -254,7 +258,7 @@ header{
 	width: 48px;
 	height: 48px;
 	margin-left: 5px;
-	background: url(https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/285/money-with-wings_1f4b8.png) 50%/cover no-repeat;
+	background: url(./icons/hi.png) 50%/cover no-repeat;
   background-size: 29px;
 }
 
@@ -368,8 +372,8 @@ header{
 	right: 0;
 	top: 6%;
 	bottom: 0;
-	height: 80px;
-	width: 80px;
+	height: 320px;
+	width: 320px;
 }
 
 .intro-text-plh{
@@ -555,19 +559,20 @@ header{
 	background-size: 30px;
 	z-index: 10;
 	top: 0;
+	filter: drop-shadow(0px 1px 8px rgba(255,255,255, 0.5));
 }
 
 .small-banner-icon-2{
 	background: url(./icons/party.png) 50%/cover no-repeat;
 	background-size: 30px;
-	/* filter: drop-shadow(0px 1px 14px rgba(255,231,144,.49)); */
+	filter: drop-shadow(0px 1px 14px rgba(255,231,144,.49));
 }
 
 .small-banner-icon-3{
 	background: url(./icons/paypal3.svg) 50%/cover no-repeat;
 	background-size: 26px;
 	/* background-position-x: 19px; */
-	/* filter: drop-shadow(0px 1px 27px rgba(123,156,256)); */
+	filter: drop-shadow(0px 1px 27px rgba(123,156,256));
 }
 
 
@@ -638,6 +643,8 @@ header{
 	box-sizing: border-box;
 	margin: 10px 0 50px;
 	letter-spacing: 1px;
+	position: relative;
+	z-index: 2;
 }
 
 .small-banner-text span{
@@ -803,7 +810,7 @@ header{
 }
 
 .step-camera-i{
-	background: url(./icons/camera.svg) 50%/cover no-repeat;
+	background: url(./icons/camera.png) 50%/cover no-repeat;
 	height: 100%;
 	background-position-y: 15px;
 	background-size: 37px;
@@ -849,6 +856,7 @@ header{
 	position: relative;
 	width: 45%;
 	margin: 35px 0px 44px 46px;
+	z-index: 9;
 }
 
 .eco-1{
@@ -912,6 +920,10 @@ header{
 	margin-right: 11px;
 }
 
+.seed-emoji-650{
+	display: none;
+}
+
 .droplet-emoji{
 	margin-right: 11px;
 	filter: drop-shadow(0px 1px 11px rgba(0, 187, 255, 0.4));
@@ -935,6 +947,18 @@ header{
 	right: -84%;
 	top: -203%;
 	z-index: 0;
+}
+
+.paypal-motion{
+	z-index: 0;
+	bottom: 0;
+	position: absolute;
+	left: -6%;
+	top: -224%;
+	right: inherit;
+	height: 380px;
+	width: 380px;
+	animation: 0;
 }
 
 
@@ -1320,7 +1344,7 @@ header{
 	flex-wrap: wrap;
   justify-content: center;
   position: relative;
-  padding: 0px 0 35px 0;
+  padding: 0px 0 45px 0;
   align-items: center;
 }
 
